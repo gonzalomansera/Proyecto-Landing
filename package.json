@@ -1,0 +1,44 @@
+{
+  "name": "proyecto-landing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tailwind:build": "npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css",
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/style.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
+  },
+  "dependencies": {
+    "baseline-browser-mapping": "^2.9.19",
+    "browserslist": "^4.28.1",
+    "caniuse-lite": "^1.0.30001769",
+    "electron-to-chromium": "^1.5.286",
+    "esbuild": "^0.27.3",
+    "escalade": "^3.2.0",
+    "fdir": "^6.5.0",
+    "fraction.js": "^5.3.4",
+    "nanoid": "^3.3.11",
+    "node-releases": "^2.0.27",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "postcss-value-parser": "^4.2.0",
+    "rollup": "^4.57.1",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.15",
+    "update-browserslist-db": "^1.2.3"
+  },
+  "description": ""
+}

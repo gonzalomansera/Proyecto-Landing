@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0a0a0a;
+  --color-card: #161616;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white antialiased;
+  }
+}
+
+/* El truco: Cuando el checkbox está marcado, mostramos el menú móvil */
+#menu-toggle:checked ~ div.hidden.md\:flex {
+  /* This selector was targeting the desktop menu, likely wrong in user code vs my fix logic, let's just stick to user's implementation intent */
+}
+
+#menu-toggle:checked ~ #mobile-menu {
+  @apply flex;
+}
+
+/* Note: User's HTML has a peer-checked logic for the mobile menu: 
+   <input type="checkbox" id="menu-toggle" class="hidden peer">
+   <div class="hidden peer-checked:flex ...">
+   
+   So the CSS based #menu-toggle:checked might be redundant if the HTML classes handle it. 
+   But I will keep the file valid.
+*/
